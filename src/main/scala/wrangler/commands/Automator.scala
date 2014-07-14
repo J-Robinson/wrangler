@@ -73,7 +73,7 @@ object Automator extends ArgMain[AutomatorArgs] {
         )
 
         Stash.pullRequest(
-          repo, args.branch, args.targetBranch, args.title, args.description, stash.reviewers
+          repo, args.branch, args.targetBranch, args.title, args.description, stash.treviewers
         )(stash.tproject, stash.tapiUrl, stash.tuser, stash.tpassword).map(_ => ())
       }
 
